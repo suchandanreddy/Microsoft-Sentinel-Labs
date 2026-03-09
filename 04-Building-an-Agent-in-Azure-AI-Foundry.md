@@ -233,4 +233,3 @@ Highlight discrepancies or noteworthy observations across identity, access, and 
 ![](Images/Test-Agent-AI-Foundry-1.png)
 ![](Images/Test-Agent-AI-Foundry-2.png)
 ![](Images/Test-Agent-AI-Foundry-3.png)
-![](Images/Test-Agent-AI-Foundry-4.png)
