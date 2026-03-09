@@ -1,0 +1,81 @@
+datatable(
+    TimeGenerated: datetime,
+    DisplayName: string,
+    AlertName: string,
+    AlertSeverity: string,
+    Description: string,
+    ProviderName: string,
+    VendorName: string,
+    AlertType: string,
+    ConfidenceLevel: string,
+    IsIncident: bool,
+    CompromisedEntity: string,
+    ExtendedProperties: dynamic,
+    Entities: dynamic,
+    ProductName: string
+)
+[
+    // AKS – malware execution blocked after privilege escalation activity
+    datetime(2026-03-05T09:24:10Z),
+    "Microsoft Defender for Cloud Kubernetes malware execution blocked",
+    "Kubernetes malware execution blocked on node",
+    "High",
+    "Malware execution was detected and blocked on a Kubernetes node. The activity occurred shortly after privileged access and RBAC changes were performed on the cluster, increasing confidence of malicious intent.",
+    "Azure Security Center",
+    "Microsoft",
+    "K8S.NODE_MalwareBlocked",
+    "High",
+    true,
+    "prod-aks-eastus",
+    dynamic({
+        "ClusterName": "prod-aks-eastus",
+        "Namespace": "prod",
+        "NodeRole": "Worker",
+        "DetectionSource": "microsoftDefenderForContainers",
+        "SuspiciousActivity": "Malware execution in container runtime",
+        "RelatedContext": "Recent ClusterAdmin access and RoleBinding creation detected"
+    }),
+    dynamic([
+        {
+            "Type": "KubernetesCluster",
+            "Name": "prod-aks-eastus",
+            "CloudPlatform": "Azure"
+        },
+        {
+            "Type": "Host",
+            "HostName": "prod-aks-eastus"
+        }
+    ]),
+    "Azure Security Center",
+    // AKS – binary drift blocked on vulnerable workload
+    datetime(2026-03-05T11:51:58Z),
+    "Microsoft Defender for Cloud Kubernetes binary drift blocked",
+    "Kubernetes workload binary drift blocked",
+    "Medium",
+    "Execution of a workload binary that drifted from the original container image was detected and blocked. The affected workload resides in a production Kubernetes cluster and is associated with a workload previously accessed via kubectl exec.",
+    "Azure Security Center",
+    "Microsoft",
+    "K8S.NODE_DriftBlocked",
+    "Medium",
+    true,
+    "prod-aks-eastus",
+    dynamic({
+        "ClusterName": "prod-aks-eastus",
+        "Namespace": "prod",
+        "Workload": "ingress-controller",
+        "DriftType": "Binary drift from image baseline",
+        "DetectionSource": "microsoftDefenderForContainers"
+    }),
+    dynamic([
+        {
+            "Type": "KubernetesCluster",
+            "Name": "prod-aks-eastus",
+            "CloudPlatform": "Azure"
+        },
+        {
+            "Type": "Host",
+            "HostName": "prod-aks-eastus"
+        }
+    ]),
+    "Azure Security Center"
+];

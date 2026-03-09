@@ -1,0 +1,43 @@
+datatable(
+    TimeGenerated: datetime,
+    SourceUserName: string,
+    SourceIP: string,
+    DestinationHostName: string,
+    DeviceCustomString1: string,
+    DeviceCustomString1Label: string,
+    AdditionalExtensions: string
+)
+[
+    // u1291 – MFA-approved privileged access to AKS
+    datetime(2026-03-05T09:20:48Z),
+    "u1291@contoso.onmicrosoft.com",
+    "185.92.44.17",
+    "prod-aks-eastus",
+    "MFA Approved",
+    "Authentication Status",
+    "User accessed Kubernetes cluster with ClusterAdmin role",
+    // u1291 – privilege escalation detected
+    datetime(2026-03-05T09:22:36Z),
+    "u1291@contoso.onmicrosoft.com",
+    "185.92.44.17",
+    "prod-aks-eastus",
+    "Privilege Escalation",
+    "Authentication Status",
+    "RoleBinding created granting cluster-admin privileges",
+    // u2847 – sensitive workload interaction
+    datetime(2026-03-05T11:50:14Z),
+    "u2847@contoso.onmicrosoft.com",
+    "185.92.44.17",
+    "prod-aks-eastus",
+    "Sensitive Access",
+    "Authentication Status", 	
+    "kubectl exec executed on workload with known ingress vulnerability",
+    // u3415 – service-level access to backup storage
+    datetime(2026-03-05T10:45:02Z),
+    "u3415@contoso.onmicrosoft.com",
+    "10.10.5.24",
+    "stgprodbackup01",
+    "Access Allowed",
+    "Authentication Status",
+    "Service account accessed production backup storage"
+]
