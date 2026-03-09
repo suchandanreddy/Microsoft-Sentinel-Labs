@@ -28,7 +28,7 @@ This lab explains how to integrate Sentinel tools with VS Code's AI agents:
 - Authentication setup
 - Using Sentinel MCP server in VS code
 
-### 4. [Building an Agent in Azure AI Foundry](04-Building%20an%20Agent%20in%20Azure%20AI%20Foundry.md)
+### 4. [Building an Agent in Azure AI Foundry](04-Building-an-Agent-in-Azure-AI-Foundry.md)
 
 This lab guides you through building an intelligent agent that correlates security signals:
 - Creating an agent in Azure AI Foundry
