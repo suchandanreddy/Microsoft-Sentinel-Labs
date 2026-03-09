@@ -54,7 +54,7 @@ This lab guides you through building an intelligent agent that correlates securi
 3. **Then Lab 3:** [MCP Server Setup](03-Sentinel-MCP-VSCode-Setup.md)
    - Configure VS Code to use Sentinel MCP Server
 
-4. **Finally Lab 4:** [Building an Agent in Azure AI Foundry](04-Building%20an%20Agent%20in%20Azure%20AI%20Foundry.md)
+4. **Finally Lab 4:** [Building an Agent in Azure AI Foundry](04-Building-an-Agent-in-Azure-AI-Foundry.md)
    - Create an agent
    - Correlate signals across identity, access, and endpoint data
 
