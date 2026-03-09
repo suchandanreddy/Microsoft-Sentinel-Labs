@@ -1,0 +1,19 @@
+datatable(
+    TimeGenerated:datetime,
+    CorrelationId:string,
+    Id:string,
+    IsDeleted:bool,
+    IsProcessing:bool,
+    OperationName:string,
+    RiskDetail:string,
+    RiskLastUpdatedDateTime:datetime,
+    RiskLevel:string,
+    RiskState:string,
+    UserDisplayName:string,
+    UserPrincipalName:string
+)
+[
+    datetime(2026-03-05T14:22:00Z), "riskcorr-identity-047", "a7d2f8c1-4e2b-48f3-9a06-2e5c7b3d9f1a", false, false, "RiskyUserDetected", "adminConfirmedUserCompromised", datetime(2026-02-28T10:15:00Z), "high", "confirmedCompromised", "U1291", "u1291@contoso.onmicrosoft.com",
+    datetime(2026-03-05T15:18:00Z), "riskcorr-identity-052", "b9e4a6d2-7f3c-41b8-a2e5-3f6c8d1e2b4a", false, false, "RiskyUserUpdated",  "anonymousIpAddress",             datetime(2026-02-27T14:42:00Z), "medium", "atRisk",              "U3415", "u3415@contoso.onmicrosoft.com",
+    datetime(2026-03-05T16:33:00Z), "riskcorr-identity-059", "c5f1b7e3-9d4a-42c1-b8f6-5e7d9c2a3f5b", false, false, "RiskyUserUpdated",  "userPerformedSecuredPasswordReset", datetime(2026-02-26T11:20:00Z), "medium", "remediated",          "U2847",   "u2847@contoso.onmicrosoft.com",
+]
