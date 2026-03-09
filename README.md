@@ -4,7 +4,7 @@ Welcome to the Microsoft Sentinel Labs! This directory contains comprehensive gu
 
 ## 📚 Lab Contents
 
-### 1. [Sentinel Data Lake Onboarding](./Labs/01-Sentinel-DataLake-Onboarding.md)
+### 1. [Sentinel Data Lake Onboarding](01-Sentinel-DataLake-Onboarding.md)
 **Reference:** [Microsoft Docs - Onboard to Microsoft Sentinel data lake from the Defender portal](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboard-defender)
 
 This lab guides you through the initial setup of your Microsoft Sentinel data lake:
