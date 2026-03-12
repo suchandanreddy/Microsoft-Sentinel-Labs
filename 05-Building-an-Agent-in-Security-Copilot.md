@@ -37,8 +37,8 @@ You must first complete the previous labs:
 
 1. On the home page, you will be prompted to create Security Capacity. 
 2. Select appropriate **Azure Subscription**, **Resource Group**
-3. Add **Capacity name** and select **Prompt evaluation location** and **Capacity region**.
-4. Add 1 or 2 SCUs depending on the requirement. 
+3. Add **Capacity name**, select **Prompt evaluation location** and **Capacity region**.
+4. Select 1 or 2 SCUs depending on the requirement. 
 
 ![Security Copilot Workspace Creation](Images/Security-Copilot-Workspace-1.png)
 
