@@ -4,7 +4,7 @@
 
 ## 🎯 Lab Objective
 
-In this lab, you will build a Security Copilot agent that correlates  IdentityDrift telemetry with Entra, Defender for Endpoint and Cloud alerts by using the Agent Instructions from the ![Lab 4: Building an Agent in Azure AI Foundry](https://github.com/suchandanreddy/Microsoft-Sentinel-Labs/blob/main/04-Building-an-Agent-in-Azure-AI-Foundry.md#identitydrift-agent-instructions). 
+In this lab, you will build a Security Copilot agent that correlates  IdentityDrift telemetry with Entra, Defender for Endpoint and Cloud alerts by using the Agent Instructions from the [Lab 4: Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md). 
 
 By the end of this lab, you will understand:
 
