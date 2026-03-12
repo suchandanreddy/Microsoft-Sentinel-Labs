@@ -4,7 +4,7 @@ Welcome to the Microsoft Sentinel Labs! This directory contains comprehensive gu
 
 ## 📚 Lab Contents
 
-### 1. [Sentinel Data Lake Onboarding](./Labs/01-Sentinel-DataLake-Onboarding.md)
+### 1. [Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
 
 This lab guides you through the initial setup of your Microsoft Sentinel data lake:
 - Sign in to Defender portal
@@ -12,7 +12,7 @@ This lab guides you through the initial setup of your Microsoft Sentinel data la
 - Verify permissions and prerequisites
 - Monitor onboarding progress
 
-### 2. [Creating KQL Jobs in Sentinel Data Lake Exploration](./Labs/02-Create-KQL-Jobs.md)
+### 2. [Creating KQL Jobs in Sentinel Data Lake Exploration](./02-Create-KQL-Jobs.md)
 
 This lab covers creating and scheduling KQL jobs to ingest and analyze data:
 - Creating KQL jobs with sample data
@@ -20,14 +20,14 @@ This lab covers creating and scheduling KQL jobs to ingest and analyze data:
 - Ingesting fictional ISV telemetry (IdentityDrift)
 - Creating tables: CommonSecurity_ID_KQL_CL, SigninLogs_KQL_CL, AADRiskyUsers_KQL_CL, DeviceProcessEvents_KQL_CL and SecurityAlerts_KQL_CL
 
-### 3. [Setting Up Sentinel MCP Server in VS Code](./Labs/03-Sentinel-MCP-VSCode-Setup.md)
+### 3. [Setting Up Sentinel MCP Server in VS Code](./03-Sentinel-MCP-VSCode-Setup.md)
 
 This lab explains how to integrate Sentinel tools with VS Code's AI agents:
 - Adding MCP servers in VS Code
 - Authentication setup
 - Using Sentinel MCP server in VS code
 
-### 4. [Building an Agent in Azure AI Foundry](./Labs/04-Building%20an%20Agent%20in%20Azure%20AI%20Foundry.md)
+### 4. [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
 
 This lab guides you through building an intelligent agent that correlates security signals:
 - Creating an agent in Azure AI Foundry
@@ -37,7 +37,7 @@ This lab guides you through building an intelligent agent that correlates securi
 - Correlating identity risk, authentication signals, access telemetry, and endpoint activity
 - Testing the agent scenarios
 
-### 5. [Building an Agent in Security Copilot](./Labs/05-Building-an-Agent-in-Security-Copilot.md)
+### 5. [Building an Agent in Security Copilot](./05-Building-an-Agent-in-Security-Copilot.md)
 
 This lab guides you through building a Security Copilot agent that correlates identity risk across multiple security signals:
 - Creating and managing Security Copilot workspaces
