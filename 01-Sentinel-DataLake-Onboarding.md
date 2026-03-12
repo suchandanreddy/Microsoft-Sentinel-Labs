@@ -22,7 +22,7 @@ This lab guides you through onboarding your tenant to the Microsoft Sentinel dat
 2. Click the **"Get started"** button on the banner
    - *Alternative method:* If the banner is accidentally closed, navigate to **System > Settings > Microsoft Sentinel > Data lake**
    
-![Microsoft Sentinel DataLake Settings](Images/Data%20Lake%20Onboarding-1.png)
+![Microsoft Sentinel DataLake Settings](/Labs/Images/Data%20Lake%20Onboarding-1.png)
    
 ### Step 3: Connect SIEM Workspace
 1. If you don't have the correct roles specified in **Required Permissions**, Sentinel workspace doesn't show up here and filter might not show Subscriptions.
@@ -30,18 +30,18 @@ This lab guides you through onboarding your tenant to the Microsoft Sentinel dat
 
 2. Select Workspace, then **Connect workspace** and set it as Primary. 
 
-![Microsoft SIEM Workspace](Images/Data%20Lake%20Onboarding-2.png)
+![Microsoft SIEM Workspace](/Labs/Images/Data%20Lake%20Onboarding-2.png)
 
 ### Step 4: Select Subscription and Resource Group
 1. Click on **Start setup** under **Data lake**, If you don't have the correct roles specified in **Required Permissions**, side panel will appear indicating missing permissions
-![Microsoft Data lake setup](Images/Data%20Lake%20Onboarding-3.png)
+![Microsoft Data lake setup](/Labs/Images/Data%20Lake%20Onboarding-3.png)
 
 2.   In the setup side panel, select your target **Subscription** from the dropdown
 
 3. Select the target **Resource group** to enable billing for the Microsoft Sentinel data lake
 
 4. Click the **Set up data lake** button
-![Microsoft Data lake setup](Images/Data%20Lake%20Onboarding-4.png)
+![Microsoft Data lake setup](/Labs/Images/Data%20Lake%20Onboarding-4.png)
 
 ### Step 5: Monitor Onboarding Progress
 1. The setup process begins and displays a progress panel
@@ -52,4 +52,6 @@ This lab guides you through onboarding your tenant to the Microsoft Sentinel dat
 ### Step 6: Complete Onboarding
 1. Once the onboarding process is complete, a new banner appears with information cards on how to use your new data lake. Verify **Data lake exploration** under **Microsoft Sentinel**
 
-![Microsoft Sentinel Data lake exploration](Images/Data%20Lake%20Onboarding-5.png)
+![Microsoft Sentinel Data lake exploration](/Labs/Images/Data%20Lake%20Onboarding-5.png)
+
+**Reference:** [Microsoft Docs - Onboard to Microsoft Sentinel data lake from the Defender portal](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboard-defender)
