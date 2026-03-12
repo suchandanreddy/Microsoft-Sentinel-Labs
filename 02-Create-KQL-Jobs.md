@@ -22,7 +22,7 @@ You must first onboard to the data lake. See the [Sentinel Data Lake Onboarding 
    
 ### Step 2: Review and Prepare Query
 
-1. Copy KQL Query from KQL-Jobs folder. Example: Copy the query in[CommonSecurity_ID_Logs](KQL-Jobs/CommonSecurity_ID_Logs)
+1. Copy KQL Query from KQL-Jobs folder. Example: Copy the query in [CommonSecurity_ID_Logs](KQL-Jobs/CommonSecurity_ID_Logs)
 
 ### Step 3: Schedule the Job
 1. Select **Next**
