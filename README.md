@@ -1,6 +1,28 @@
 # Microsoft Sentinel Labs
 
-Welcome to the Microsoft Sentinel Labs! This directory contains comprehensive guides for setting up and using Microsoft Sentinel's data lake capabilities and create AI Foundry agent.
+Welcome to the Microsoft Sentinel Labs! This directory contains comprehensive guides for setting up Microsoft Sentinel's data lake capabilities and creating Security Copilot agent.
+
+## 🎓 Lab Scenario: IdentityDrift Investigation
+
+The labs culminate in a realistic security investigation scenario:
+
+### The Scenario
+A user (`u1291@contoso.onmicrosoft.com`) experiences unusual authentication patterns:
+- Sign-in from new geographic location
+- Multi-factor authentication triggered
+- Privileged access to production Kubernetes cluster (prod-aks-eastus)
+- Privilege escalation detected via RoleBinding creation
+- Suspicious endpoint process execution (kubectl commands)
+
+### Your Agent Will:
+1. Query identity access data from IdentityDrift
+2. Correlate with Entra ID sign-in logs
+3. Assess risk level from AAD Risk Detection
+4. Analyze endpoint and cloud workload alerts
+5. Surface actionable insights for security response
+
+### Outcome
+Determine whether the sign-in is a legitimate identity activity or an initial access event requiring immediate containment.
 
 ## 📚 Lab Contents
 
@@ -48,6 +70,25 @@ This lab guides you through building a Security Copilot agent that correlates id
 
 **Fictional ISV Scenario:** IdentityDrift - Identity-aware access intelligence
 
+## 📋 Prerequisites Checklist
+
+Before starting these labs, ensure you have:
+
+- [ ] **Azure Account**
+  - Active Azure subscription
+  - Appropriate administrative roles mentioned in prerequisites section of each lab.
+
+- [ ] **Access & Permissions**
+  - Access to Microsoft Defender portal (https://security.microsoft.com/)
+  - Access to Azure portal
+  - Access to Microsoft Sentinel workspace
+  - Access to Azure AI Foundry (https://ai.azure.com/) for Lab 4
+   - Access to Security Copilot (https://securitycopilot.microsoft.com/) for Lab 5
+
+- [ ] **Software & Tools**
+  - Visual Studio Code installed (for Lab 3)
+  - Modern web browser for Defender, Azure, and AI Foundry portals
+
 ## 🎯 Recommended Learning Path
 
 ### For Complete Beginners:
@@ -70,25 +111,6 @@ This lab guides you through building a Security Copilot agent that correlates id
    - Create an agent in Security Copilot
    - Test running the agent to correlate signals across identity, access, and endpoint data
 
-## 📋 Prerequisites Checklist
-
-Before starting these labs, ensure you have:
-
-- [ ] **Azure Account**
-  - Active Azure subscription
-  - Appropriate administrative roles mentioned in prerequisites section of each lab.
-
-- [ ] **Access & Permissions**
-  - Access to Microsoft Defender portal (https://security.microsoft.com/)
-  - Access to Azure portal
-  - Access to Microsoft Sentinel workspace
-  - Access to Azure AI Foundry (https://ai.azure.com/) for Lab 4
-   - Access to Security Copilot (https://securitycopilot.microsoft.com/) for Lab 5
-
-- [ ] **Software & Tools**
-  - Visual Studio Code installed (for Lab 3)
-  - Modern web browser for Defender, Azure, and AI Foundry portals
-
 ## 📁 Lab Structure
 
 ```
@@ -108,29 +130,5 @@ Labs/
 ├── Images/                              (Screenshots and diagrams)
 └── README.md
 ```
-
-## 🎓 Lab Scenario: IdentityDrift Investigation
-
-The labs culminate in a realistic security investigation scenario:
-
-### The Scenario
-A user (`u1291@contoso.onmicrosoft.com`) experiences unusual authentication patterns:
-- Sign-in from new geographic location
-- Multi-factor authentication triggered
-- Privileged access to production Kubernetes cluster (prod-aks-eastus)
-- Privilege escalation detected via RoleBinding creation
-- Suspicious endpoint process execution (kubectl commands)
-
-### Your Agent Will:
-1. Query identity access data from IdentityDrift
-2. Correlate with Azure AD sign-in logs
-3. Assess risk level from AAD Risk Detection
-4. Analyze endpoint execution history
-5. Surface actionable insights for security response
-
-### Outcome
-Determine whether the sign-in is a legitimate identity activity or an initial access event requiring immediate containment.
-
-
 
 
