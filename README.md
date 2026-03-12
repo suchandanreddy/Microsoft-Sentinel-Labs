@@ -51,22 +51,22 @@ This lab guides you through building a Security Copilot agent that correlates id
 ## 🎯 Recommended Learning Path
 
 ### For Complete Beginners:
-1. **Start with Lab 1:** [Sentinel Data Lake Onboarding](./Labs/01-Sentinel-DataLake-Onboarding.md)
+1. **Start with Lab 1:** [Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
    - Establish the foundation by setting up your data lake
    - Allow 60-120 minutes for the onboarding process
 
-2. **Then Lab 2:** [Creating KQL Jobs](./Labs/02-Create-KQL-Jobs.md)
+2. **Then Lab 2:** [Creating KQL Jobs](./02-Create-KQL-Jobs.md)
    - Learn to create sample data jobs
    - Ingest IdentityDrift telemetry and other test data
 
-3. **Then Lab 3:** [MCP Server Setup](./Labs/03-Sentinel-MCP-VSCode-Setup.md)
+3. **Then Lab 3:** [MCP Server Setup](./03-Sentinel-MCP-VSCode-Setup.md)
    - Configure VS Code to use Sentinel MCP Server
 
-4. **Then Lab 4:** [Building an Agent in Azure AI Foundry](./Labs/04-Building%20an%20Agent%20in%20Azure%20AI%20Foundry.md)
+4. **Then Lab 4:** [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
    - Create an agent
    - Correlate signals across identity, access, and endpoint data
 
-5. **Finally Lab 5:** [Building an Agent in Security Copilot](./Labs/05-Building-an-Agent-in-Security-Copilot.md)
+5. **Finally Lab 5:** [Building an Agent in Security Copilot](./05-Building-an-Agent-in-Security-Copilot.md)
    - Create an agent in Security Copilot
    - Test running the agent to correlate signals across identity, access, and endpoint data
 
