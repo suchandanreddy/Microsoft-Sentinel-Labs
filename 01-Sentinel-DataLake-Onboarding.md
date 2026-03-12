@@ -22,7 +22,7 @@ This lab guides you through onboarding your tenant to the Microsoft Sentinel dat
 2. Click the **"Get started"** button on the banner
    - *Alternative method:* If the banner is accidentally closed, navigate to **System > Settings > Microsoft Sentinel > Data lake**
    
-![Microsoft Sentinel DataLake Settings](/Labs/Images/Data%20Lake%20Onboarding-1.png)
+![Microsoft Sentinel DataLake Settings](Images/Data%20Lake%20Onboarding-1.png)
    
 ### Step 3: Connect SIEM Workspace
 1. If you don't have the correct roles specified in **Required Permissions**, Sentinel workspace doesn't show up here and filter might not show Subscriptions.
