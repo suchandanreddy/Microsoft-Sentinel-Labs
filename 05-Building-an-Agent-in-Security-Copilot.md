@@ -258,6 +258,12 @@ Define `UserPrincipalName` as the input to get user identity to perform investig
 
 ![Agent Configuration](Images/Security-Copilot-Agent-7.png)
 
+**IdentityDrift Investigation Agent Run Results**
+
+![Agent Run](Images/Security-Copilot-Agent-Run-1.png)
+![Agent Run](Images/Security-Copilot-Agent-Run-2.png)
+![Agent Run](Images/Security-Copilot-Agent-Run-3.png)
+
 
 ### Related Labs
 - [Lab 1: Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
