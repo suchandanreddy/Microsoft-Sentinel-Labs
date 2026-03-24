@@ -616,7 +616,7 @@ On the Offer setup page:
 
 **Reference**: [How to preview and test your offer listing for Security Store](https://learn.microsoft.com/en-us/security/store/preview-and-test-your-offer-listing-for-security-store)
 
-## Step 4: Technical Configuration
+## Task 5: Technical Configuration
 
 1. Go to **Technical configuration** in left menu
 2. Fill in required fields:
@@ -639,7 +639,7 @@ On the Offer setup page:
 >
 > **Webhook setup guidance:** [Implementing a webhook on the SaaS service - Marketplace publisher](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/pc-saas-fulfillment-webhook).
 
-## Step 5: Create Plan and Pricing
+## Task 6: Create Plan and Pricing
 
 #### For Free Agents:
 
@@ -680,16 +680,16 @@ On the Offer setup page:
 > The Acme Identity Threat Triage Agent is available at no cost. This agent typically consumes 1.0 SCU per analysis run. SCU consumption may vary depending on the volume of data in your Microsoft Sentinel workspace and the complexity of the investigation.
 > ```
 
-## Step 6: Supplement content
+## Task 7: Supplement content
 
 1. Select **SaaS Scenarios** - SaaS solution is partially hosted in your (the ISV's) Azure infrastructure, partially hosted in the customer's Azure infrastructure, and/or elsewhere (another public cloud, on-premises, etc.)
 2. Select **SaaS models** - **Other** and describe your Agent use case
 3. Select location where deployment will happen as **Customer Azure's tenant / subscription**
 3. Upload Product documentation
 
-## Task 7: Publish Your Agent
+## Task 8: Publish Your Agent
 
-### Step 7.1: Final Review Checklist
+### Step 8.1: Final Review Checklist
 
 Before publishing, verify:
 
@@ -707,7 +707,7 @@ Before publishing, verify:
 - ZIP package is valid and up to date
 - Terms and privacy policy links work
 
-### Step 7.2: Submit for Publication
+### Step 8.2: Submit for Publication
 
 1. Click **Review and publish** (top right of Partner Center)
 2. Review all sections
@@ -715,7 +715,7 @@ Before publishing, verify:
 4. Your offer enters automated review process
 5. After the automated review, click **Go Live** to move the request to Security Store team for review and certification
 
-### Step 7.3: Monitor Publication Status
+### Step 8.3: Monitor Publication Status
 
 1. Return to Partner Center → **Marketplace Offers**
 2. Find your offer
@@ -724,7 +724,7 @@ Before publishing, verify:
    - 🔴 **Changes required** - Review feedback received, corrections needed
    - 🟢 **Published** - Live in Security Store
 
-### Step 7.3: Verify Live Listing
+### Step 8.4: Verify Live Listing
 
 Once published, verify your listing at:
 `https://securitystore.microsoft.com/agents`
