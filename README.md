@@ -70,6 +70,12 @@ This lab guides you through building a Security Copilot agent that correlates id
 
 **Fictional ISV Scenario:** IdentityDrift - Identity-aware access intelligence
 
+### 6. [Publishing Agent to Security Store](./06-Publishing-Agent-to-Security-Store.md)
+
+This lab guides you through publishing your Security Copilot agent to the Microsoft Security Store:
+- Creating a deployment package (.zip) with agent manifest and dependencies
+- Publishing your agent offer in Microsoft Partner Center
+
 ## 📋 Prerequisites Checklist
 
 Before starting these labs, ensure you have:
@@ -91,25 +97,29 @@ Before starting these labs, ensure you have:
 
 ## 🎯 Recommended Learning Path
 
-### For Complete Beginners:
 1. **Start with Lab 1:** [Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
    - Establish the foundation by setting up your data lake
    - Allow 60-120 minutes for the onboarding process
-
-2. **Then Lab 2:** [Creating KQL Jobs](./02-Create-KQL-Jobs.md)
+                     
+2. **Lab 2:** [Creating KQL Jobs](./02-Create-KQL-Jobs.md)
    - Learn to create sample data jobs
    - Ingest IdentityDrift telemetry and other test data
 
-3. **Then Lab 3:** [MCP Server Setup](./03-Sentinel-MCP-VSCode-Setup.md)
+3. **Lab 3:** [MCP Server Setup](./03-Sentinel-MCP-VSCode-Setup.md)
    - Configure VS Code to use Sentinel MCP Server
 
-4. **Then Lab 4:** [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
+4. **Lab 4:** [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
    - Create an agent
    - Correlate signals across identity, access, and endpoint data
 
-5. **Finally Lab 5:** [Building an Agent in Security Copilot](./05-Building-an-Agent-in-Security-Copilot.md)
+5. **Lab 5:** [Building an Agent in Security Copilot](./05-Building-an-Agent-in-Security-Copilot.md)
    - Create an agent in Security Copilot
    - Test running the agent to correlate signals across identity, access, and endpoint data
+
+6. **Lab 6:** [Publishing Agent to Security Store](./06-Publishing-Agent-to-Security-Store.md)
+   - Package your agent
+   - Create SaaS offer in Partner Center
+   - Publish to Security Store for customer acquisition
 
 ## 📁 Lab Structure
 
@@ -120,6 +130,7 @@ Labs/
 ├── 03-Sentinel-MCP-VSCode-Setup.md
 ├── 04-Building an Agent in Azure AI Foundry.md
 ├── 05-Building-an-Agent-in-Security-Copilot.md
+├── 06-Publishing-Agent-to-Security-Store.md
 ├── KQL-Jobs/
 │   ├── CommonSecurity_ID_Logs          (IdentityDrift access telemetry)
 │   ├── SigninLogs                       (Azure AD sign-in events)
