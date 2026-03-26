@@ -79,10 +79,10 @@ The agent instructions are critical for defining the agent behavior. Copy the fo
 #### IdentityDrift Agent Instructions 
 
 ```
-1. Accept User Principal Name (UPN) Input
-
-Accept a User Principal Name (UPN) or identifying string as input from the prompt. Ensure to use that UPN throughout the analysis.
-
+1. UserPrincipalName Input
+ 
+Ensure to use the UserPrincipalName input throughout the analysis.
+ 
 2. Global Query Rule (MANDATORY)
 
 Every query MUST filter to the last 24 hours:

@@ -64,9 +64,9 @@ The `AgentManifest.yaml` is exported from Microsoft Security Copilot after build
 
 ![Publish Security Copilot Agent](Images/Publish-Security-Copilot-Agent-1.png)
 
-Below is an example of **AgentManifest.yaml** file for **IdentityDrift-Investigation-Agent**.
-
-```yaml
+<details>
+  <summary><b>IdentityDrift-Investigation-Agent AgentManifest.yaml file - Click to expand!</b></summary>
+<pre>
 Descriptor:
   Name: IdentityDrift-Investigation-Agent
   Description: >-
@@ -333,13 +333,14 @@ AgentDefinitions:
     PreviewState: Private
     PublisherSource: Custom
     AgentSingleInstanceConstraint: None
-```
+</pre>
+</details>
 
-> **💡 Tips & Tricks — AgentManifest.yaml Common Review Failures**
+> ### 💡 Tips & Tricks — AgentManifest.yaml Common Review Failures
 >
 > The Security Store review team runs a thorough validation on `AgentManifest.yaml` before approving offer. The following are the **most common failure points** observed:
 >
-> **1. `product` and `publisher` must be the ISV name — not generic values**
+> ### 1. `product` and `publisher` must be the ISV name — not generic values
 > - The `product` and `publisher` fields under `AgentDefinitions` must reflect the ISV's **actual product name and company name**. Do NOT leave them as default values like `"Custom"` after downloading **AgentManifest.yaml** from [Security Copilot](https://securitycopilot.microsoft.com/). 
 > ```yaml
 > # ❌ Wrong
@@ -353,7 +354,7 @@ AgentDefinitions:
 >   Publisher: Acme Inc.
 > ```
 >
-> **2. Settings key names must EXACTLY match Skill input names (no spaces, case-sensitive)**
+> ### 2. Settings key names must EXACTLY match Skill input names (no spaces, case-sensitive)
 > - If your Skill declares an input named `UserPrincipalName`, the `Settings` section under `AgentDefinitions` must use exactly `UserPrincipalName` — NOT `User Principal Name` (with spaces). 
 > ```yaml
 > # ❌ Wrong — spaces in key name
@@ -365,21 +366,21 @@ AgentDefinitions:
 >   - Name: UserPrincipalName
 > ```
 >
-> **3. Input fields must include a `Description` property**
+> ### 3. Input fields must include a `Description` property
 > - Every input/setting field must have a meaningful `Description` that helps the user understand what value to provide. Without descriptions, users hovering over input fields in Security Copilot see nothing.
 >
-> **4. Skill names must be descriptive — not version labels or random characters**
+> ### 4. Skill names must be descriptive — not version labels or random characters
 > - When defining Custom Skills in Security Copilot Agent, the Skill names like `"Agent v3"`, or `"Skill_01"` are rejected because they do not convey what the skill does. 
 > Name skills after their action and target, e.g., `"GetSignInLogsForUser"`, `"QueryRiskyUsersTable"`, `"CorrelateEndpointActivity"`.
 >
-> **5. `RequiredSkillsets` must include all integrated Microsoft products** 
+> ### 5. `RequiredSkillsets` must include all integrated Microsoft products
 > - If your agent integrates with Microsoft Sentinel Data Exploration or other Sentinel MCP tools, add `MCP.Sentinel` to `RequiredSkillsets`. This is important not just for standards alignment — when `MCP.Sentinel` is listed, Sentinel visibly appears under the **Plugins** section in the agent run view, which is required for passing the screenshot validation during review.
 > ```yaml
 > RequiredSkillsets:
 >   - MCP.Sentinel
 > ```
 >
-> **6. Never hardcode time windows in KQL — use input parameters**
+> ### 6. Never hardcode time windows in KQL — use input parameters
 > - KQL queries with hardcoded `ago(7d)` or similar values are flagged as inflexible. Replace them with input parameters so the time window is configurable:
 > ```yaml
 > # ❌ Wrong — hardcoded time window
@@ -391,7 +392,7 @@ AgentDefinitions:
 >   SigninLogs | where TimeGenerated > ago({{TimeRange}}) ...
 > ```
 >
-> **7. Full grammar, spelling, and capitalization audit is performed**
+> ### 7. Grammar and spelling audit
 > - The review team checks every text field: `Descriptor.Description`, `SkillGroups` skill descriptions, input descriptions, `DisplayName` fields. Grammatical errors like "for a specific given username" (redundant phrasing) or unnecessary capitalization throughout are flagged. Run a full grammar check on all YAML text fields before packaging.
 
 
@@ -446,7 +447,7 @@ Before creating your offer, collect the following:
 - Pricing model (free or paid)
 - SCU consumption estimate 
 
-> **💡 Tip — Prepare Agent Description Before Starting in Partner Center**
+> ### 💡 Tip — Prepare Agent Description Before Starting in Partner Center
 > - The Security Store review team requires the offer description to include a structured format covering Agent Tasks, Inputs, and Outputs. Below is the expected format:
 >
 > ```
@@ -475,7 +476,7 @@ Before creating your offer, collect the following:
 >
 > Refer to existing published agents in the [Security Store](https://securitystore.microsoft.com) or [Silverfort Identity Threat Triage Agent](https://securitystore.microsoft.com/solutions/silverfort.silverfort-scp-agent) for formatting examples.
 >
-> **💡 Tip — Measure SCU Consumption**
+> ### 💡 Tip — Measure SCU Consumption
 > - The Plan description in Partner Center is required to include an SCU consumption estimate. Before starting your offer on Partner Center submission, run your agent 3–5 times under typical scenarios and record the SCU usage shown after each run in Security Copilot. Take the average and round up. You will add this to the Plan description as an example: **"This agent typically consumes 1.0 SCU per analysis run."**
 
 
@@ -510,7 +511,7 @@ On the Offer setup page:
 4. **Microsoft integrations:** ✓ Check *"My offer integrates with Microsoft Security services"*
 5. Click **Save draft**
 
-> **💡 Tip — Critical: Enable Microsoft Security Services Integration**
+> ### 💡 Tip — Critical: Enable Microsoft Security Services Integration
 > - Checking **"My offer integrates with Microsoft Security services"** in Step 3.3 above is critical. Without enabling this checkbox, the **"Microsoft Security services"** option will NOT appear in the left navigation menu of your offer. This is the section where you upload your agent package `.zip` file. 
 
 ### Step 3.4: Fill in metadata properties
@@ -537,7 +538,7 @@ On the Offer setup page:
 4. Upload User guide under **Product information documents**
 5. Click **Save draft**
 
-> **💡 Tip — Agent Name Must NOT Contain Microsoft Product Names**
+> ### 💡 Tip — Agent Name Must NOT Contain Microsoft Product Names
 > - The third-party agent name in Partner Center **must not** contain any Microsoft product names, including `"Security Copilot"`, `"Microsoft Sentinel"`, `"Microsoft Defender"`, `"Entra"`, etc.
 > ```
 > ❌ "Acme Security Copilot Investigation Agent"
@@ -545,7 +546,7 @@ On the Offer setup page:
 > ```
 > Check ALL locations: the offer name, the plan name, and the description text.
 >
-> **💡 Tip — Offer listing: Links and User Guide**
+> ### 💡 Tip — Offer listing: Links and User Guide
 > - Two fields in the Offer listing which are commonly missed and cause review failures:
 >
 > 1. **Marketing/Product page link:** 
@@ -555,13 +556,13 @@ On the Offer setup page:
 > - Upload user guide PDF under **Offer listing → Supplemental product information for customers → Product information documents**. This document must include a details for users to learn more about the agent and find instructions to install or use it.
 > - For reference, see the [Silverfort Identity Threat Triage Agent User Guide](https://catalogartifact.azureedge.net/publicartifacts/silverfort.silverfort-scp-agent-fe6c572a-80dc-491c-974e-412163852c84/Artifacts/Documents/Silverfort-Identity-Threat-Triage-Agent-User-Guide.pdf)
 >
-> **💡 Tip — Screenshots Must Show Full Agent Execution and Results**
+> ### 💡 Tip — Screenshots Must Show Full Agent Execution and Results
 > - Screenshots are validated by the review team. Screenshots that show only configuration screens, setup pages, or UI without a running agent are rejected. At least one screenshot must:
 >   - Show the agent **actively running** and returned results.
 >   - Show the integrated Microsoft product (e.g., **Microsoft Sentinel**) visibly listed under the **Plugins** section in the agent view
 >   - Screenshot resolution must be **1280×720 px**. Use [https://imageresizer.com](https://imageresizer.com) to resize if needed.
 >
-> **💡 Tip — To get Microsoft Sentinel to appear under Plugins:** 
+> ### 💡 Tip — To get Microsoft Sentinel to appear under Plugins:
 > - Add `MCP.Sentinel` to `RequiredSkillsets` in your `AgentManifest.yaml`.
 
 ### Step 3.6: Add Microsoft Security Services Metadata
@@ -585,7 +586,7 @@ On the Offer setup page:
     
 5. Click **Save draft**
 
-> **💡 Tip — Integrated Microsoft Security Products Selection Must Match Agent Description**
+> ### 💡 Tip — Integrated Microsoft Security Products Selection Must Match Agent Description
 > - The **Integrated Microsoft Security Products** selection must accurately reflect what your agent actually integrates with in the description and in practice. Common mismatches that are hard fails:
 >   - Agent description mentions Sentinel Data Lake queries but only "Security Copilot" is selected → Add "Microsoft Sentinel"
 >   - Agent description mentions Defender alerts but "Microsoft Sentinel" is selected → Add "Microsoft Defender"
@@ -630,7 +631,7 @@ On the Offer setup page:
 
 3. Click **Save draft**
 
-> **💡 Tip — Technical Configuration is Mandatory and Blocks Submission**
+> ### 💡 Tip — Technical Configuration is Mandatory and Blocks Submission
 > - Partner Center will **block the "Review and Publish" button** if Technical Configuration is not fully filled in — even if your organization does not plan to use telemetry or license management webhooks. This is a required section for all SaaS offers on the Microsoft commercial marketplace.
 >
 > **If you are not ready to implement a webhook:**
@@ -668,14 +669,14 @@ On the Offer setup page:
 7. **Plan visibility:** Set to **Public** (or **Private** for specific customers)
 8. Click **Save draft**
 
-> **💡 Tip — Plan Description Must Include SCU Consumption Estimate**
+> ### 💡 Tip — Plan Description Must Include SCU Consumption Estimate
 > - The Plan description is required to include an estimate of SCU consumption. Add a clear statement such as:
 >
 > *"This agent typically consumes 1.0 SCU per analysis run."*
 >
 > To learn more about how to estimate SCU usage, see [Manage usage - Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/manage-usage).
 >
-> **💡 Tip - Example full Plan description:**
+> ### 💡 Tip - Example full Plan description:
 > ```
 > The Acme Identity Threat Triage Agent is available at no cost. This agent typically consumes 1.0 SCU per analysis run. SCU consumption may vary depending on the volume of data in your Microsoft Sentinel workspace and the complexity of the investigation.
 > ```
