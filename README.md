@@ -26,50 +26,6 @@ A user (`u1291@contoso.onmicrosoft.com`) experiences unusual authentication patt
 ### Outcome
 Determine whether the sign-in is a legitimate identity activity or an initial access event requiring immediate containment.
 
-## 📚 Lab Contents
-
-### 1. [Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
-
-This lab guides you through the initial setup of your Microsoft Sentinel data lake:
-- Create a Log Analytics workspace in Azure Portal
-- Sign in to Defender portal
-- Complete data lake onboarding process
-
-### 2. [Creating KQL Jobs in Sentinel Data Lake Exploration](./02-Create-KQL-Jobs.md)
-
-This lab shows how to use KQL Jobs as a  shortcut to populate data lake with sample data:
-- Ingest sample telemetry for IdentityDrift, Entra ID sign-in logs and risk detection, Defender for Endpoint events, and Defender for Cloud alerts using KQL Jobs
-
-### 3. [Setting Up Sentinel MCP Server in VS Code](./03-Sentinel-MCP-VSCode-Setup.md)
-
-This lab explains how to integrate Sentinel tools with VS Code's AI agents:
-- Authentication setup
-- Using Sentinel MCP server in VS code
-
-### 4. [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
-
-This lab uses Azure AI Foundry as **developer playground** to build, test, and refine agent instructions before building Security Copilot Agent:
-- Create an agent and configure instructions for security investigations
-- Integrate Sentinel Data Exploration MCP Server to query data
-- Correlate IdentityDrift telemetry with Entra ID sign-in logs and risk detection, Defender for Endpoint events, and Defender for Cloud alerts
-- Test and iterate on agent behavior
-
-
-### 5. [Building an Agent in Security Copilot](./05-Building-an-Agent-in-Security-Copilot.md)
-
-This lab guides you through building a Security Copilot agent:
-- Creating and managing Security Copilot workspaces
-- Provisioning Security Compute Units (SCUs) for agent execution
-- Configuring agent instructions for identity risk investigation
-- Integrating Sentinel MCP tools into agent
-- Running and testing agent scenarios
-
-### 6. [Publishing Agent to Security Store](./06-Publishing-Agent-to-Security-Store.md)
-
-This lab guides you through publishing your Security Copilot agent to the Microsoft Security Store:
-- Creating a deployment package (.zip) with agent manifest and dependencies
-- Publishing your agent offer in Microsoft Partner Center
-
 ## 📋 Prerequisites
 
 Before starting these labs, ensure you have:
@@ -101,7 +57,7 @@ Before starting these labs, ensure you have:
    - Ingest IdentityDrift telemetry and other test data
 
 3. **Lab 3:** [MCP Server Setup](./03-Sentinel-MCP-VSCode-Setup.md)
-   - Configure VS Code to use Sentinel MCP Server
+   - Use Sentinel MCP server in VS code
 
 4. **Lab 4:** [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
    - Create an agent in AI Foundry
