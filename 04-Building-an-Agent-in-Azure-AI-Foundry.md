@@ -2,6 +2,8 @@
 
 **Fictional ISV:** IdentityDrift
 
+> **💡 Using AI Foundry as Your Dev Sandbox:** This module uses **Azure AI Foundry as a developer playground** to build, test, and refine agent instructions. Here, you can experiment with agent instructions, validate that agent performs analysis correctly, and iterate on the instructions based on test outcomes. Once you're satisfied with the agent's behavior and investigation outcomes, you'll use these validated instructions to build the agent in **Security Copilot** (Lab 5), test it in that environment, and then publish to the **Security Store** (Lab 6). Think of AI Foundry as your sandbox for rapid prototyping and instruction refinement before building and publishing a Security Copilot Agent.
+
 ## 🎯 Lab Objective
 
 In this lab, you will build an Agent that reasons across identity risk, authentication signals, access telemetry, and endpoint activity using fictional IdentityDrift telemetry streamed into Microsoft Sentinel Data Lake.

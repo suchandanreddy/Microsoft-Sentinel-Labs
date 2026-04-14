@@ -2,7 +2,7 @@
 
 ## Overview
 
-This module guides you through the process of publishing a Microsoft Security Copilot agent to the Security Store. After building and testing your agent, you'll package it for distribution and list it in Microsoft's Security Store marketplace, making it available to customers globally.
+This module guides you through the process of publishing a Microsoft Security Copilot agent to the Security Store. After building and testing your agent, you'll package it for distribution and list it in Microsoft's Security Store marketplace, making it available to customers.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Create SaaS Offer in Partner Center
     ↓
 Configure Offer Metadata & Listing
     ↓
-Submit for Publication
+Review and publish
     ↓
 Live in Security Store
 ```
@@ -488,18 +488,26 @@ Before creating your offer, collect the following:
 
 1. Go to [Microsoft Partner Center](https://partner.microsoft.com/dashboard)
 2. Sign in with your login details
-3. Navigate to **Marketplace Offers**
+3. Navigate to **Marketplace offers**
 
-### Step 3.2: Create New SaaS Offer or Clone Existing Offer
+### Step 3.2: Create New SaaS offer or Clone Existing offer
 
-> 💡 Tip - If you have an existing SaaS offer in Partner Center, **clone it** to reduce setup time. Cloning automatically carries forward your logo, legal documentation, privacy policy links, and other common metadata. You'll then only need to update agent-specific content.
-
-1. Click **New Offer**
+1. Click **New offer**
 2. Select **Software as a Service (SaaS)** as the offer type
+3. Select **Start with a blank offer** or **Clone an existing offer**
+> 💡 Tip - If you have an existing SaaS offer in Partner Center, **clone it** to reduce setup time. Cloning automatically carries forward your logo, legal documentation, privacy policy links, and other common metadata. You'll then only need to update security copilot agent specific content.
 3. Enter offer details: (Example)
    - **Offer ID:** `identity-drift-agent` (lowercase, hyphens)
    - **Alias:** `IdentityDrift Investigation Agent`
 4. Click **Create**
+
+---
+
+> ### 📖 Important: Parallel Reading with Official Documentation
+> 
+> **The subsequent steps in this lab module are intended as supplementary guidance** that complements the official Microsoft documentation. To ensure you follow the most current Partner Center workflow and best practices, **please use this lab guide in parallel with** - **[Publish a Security Copilot Agent in Security Store](https://learn.microsoft.com/en-us/security/store/publish-a-security-copilot-agent-or-analytics-solution-in-security-store#publish-an-offer-in-the-partner-center)**
+
+---
 
 ### Step 3.3: Configure Offer Setup
 
@@ -636,7 +644,7 @@ On the Offer setup page:
 >
 > **If you are not ready to implement a webhook:**
 > - Use **dummy/placeholder values** for the Landing page URL, webhook, tenant ID, and app ID
-> - These values can be updated at any time by modifying and republishing the same offer
+> - These values can be updated later by modifying and republishing the same offer
 >
 > **Webhook setup guidance:** [Implementing a webhook on the SaaS service - Marketplace publisher](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/pc-saas-fulfillment-webhook).
 
@@ -683,10 +691,9 @@ On the Offer setup page:
 
 ## Task 7: Supplement content
 
-1. Select **SaaS Scenarios** - SaaS solution is partially hosted in your (the ISV's) Azure infrastructure, partially hosted in the customer's Azure infrastructure, and/or elsewhere (another public cloud, on-premises, etc.)
-2. Select **SaaS models** - **Other** and describe your Agent use case
-3. Select location where deployment will happen as **Customer Azure's tenant / subscription**
-3. Upload Product documentation
+1. Select **SaaS Scenarios** - SaaS solution is not hosted in Azure.
+2. In the **text box**, enter the following note: **Offer listing is for Security Copilot Agent in Microsoft Security Store.**
+3. Upload Product documentation and select category **Architecture diagram**
 
 ## Task 8: Publish Your Agent
 

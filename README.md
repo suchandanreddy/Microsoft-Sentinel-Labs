@@ -29,14 +29,15 @@ Determine whether the sign-in is a legitimate identity activity or an initial ac
 ### 1. [Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
 
 This lab guides you through the initial setup of your Microsoft Sentinel data lake:
+- Create a Log Analytics workspace in Azure Portal
 - Sign in to Defender portal
-- Complete onboarding process
-- Verify permissions and prerequisites
+- Complete data lake onboarding process
+- Connect SIEM workspace and select subscription/resource group
 - Monitor onboarding progress
 
 ### 2. [Creating KQL Jobs in Sentinel Data Lake Exploration](./02-Create-KQL-Jobs.md)
 
-This lab covers creating and scheduling KQL jobs to ingest and analyze data:
+This lab shows how to use KQL Jobs as a  shortcut to populate data lake with sample data:
 - Creating KQL jobs with sample data
 - Scheduling recurring jobs
 - Ingesting fictional ISV telemetry (IdentityDrift)
@@ -51,13 +52,13 @@ This lab explains how to integrate Sentinel tools with VS Code's AI agents:
 
 ### 4. [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
 
-This lab guides you through building an intelligent agent that correlates security signals:
-- Creating an agent in Azure AI Foundry
-- Configuring agent instructions for security investigations
-- Integrating Sentinel Data Exploration MCP Server
+This lab uses Azure AI Foundry as **developer playground** to build, test, and refine agent instructions before building Security Copilot Agent:
+- Create an agent and configure instructions for security investigations
+- Integrate Sentinel Data Exploration MCP Server to query data
 - Querying multiple data sources: CommonSecurity_ID_KQL_CL, SigninLogs_KQL_CL, AADRiskyUsers_KQL_CL, DeviceProcessEvents_KQL_CL and SecurityAlerts_KQL_CL
-- Correlating identity risk, authentication signals, access telemetry, and endpoint activity
-- Testing the agent scenarios
+- Correlate identity risk, authentication signals, access telemetry, and endpoint activity
+- Test and iterate on agent behavior with realistic IdentityDrift scenarios
+
 
 ### 5. [Building an Agent in Security Copilot](./05-Building-an-Agent-in-Security-Copilot.md)
 
@@ -69,7 +70,6 @@ This lab guides you through building a Security Copilot agent that correlates id
 - Running and testing agent scenarios.
 
 **Fictional ISV Scenario:** IdentityDrift - Identity-aware access intelligence
-
 ### 6. [Publishing Agent to Security Store](./06-Publishing-Agent-to-Security-Store.md)
 
 This lab guides you through publishing your Security Copilot agent to the Microsoft Security Store:
@@ -81,8 +81,11 @@ This lab guides you through publishing your Security Copilot agent to the Micros
 Before starting these labs, ensure you have:
 
 - [ ] **Azure Account**
-  - Active Azure subscription
-  - Appropriate administrative roles mentioned in prerequisites section of each lab.
+  - **Active Azure subscription** is required to complete all labs
+  - If you don't have an Azure account:
+    - **Sign up for a free Azure account** at https://azure.microsoft.com/pricing/purchase-options/azure-account/
+    - New Azure accounts receive **$200 in free credits** for the first 30 days
+  - Appropriate administrative roles mentioned in prerequisites section of each lab
 
 - [ ] **Access & Permissions**
   - Access to Microsoft Defender portal (https://security.microsoft.com/)
@@ -141,5 +144,13 @@ Labs/
 ├── Images/                              (Screenshots and diagrams)
 └── README.md
 ```
+
+## 📖 Additional Resources
+
+Enhance your understanding of agent development with these complementary blogs:
+
+- **[Accelerate Agent Development: Hacks for Building with Microsoft Sentinel Data Lake](https://aka.ms/AppAssure_AccelerateAgentDev)** — Outlines the complete **Composite Application Model** (data sources → ingestion → data lake → agent → end user) and walks through all five phases of agent development: data ingestion design, Sentinel data lake onboarding, building and testing in Foundry, migration to Security Copilot, and publishing. This blog provides the architectural framework and proven patterns.
+
+- **[Agentic Use Cases for Developers on the Microsoft Sentinel Platform](https://aka.ms/AppAssure_AgenticUseCases)** — Discover how ISV developers can build Security Copilot agents aligned with their product expertise: Identity Intelligence, Cyber Resilience, Networking, Endpoint Detection & Response, Asset exploitability, and Threat Intelligence. Each use case shows how to correlate your product's signals with Sentinel data to deliver fast, repeatable SOC investigation workflows that solve security problems at scale.
 
 

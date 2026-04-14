@@ -1,5 +1,27 @@
 # Creating KQL Jobs in Sentinel Data Lake Exploration
 
+## Overview
+
+### Typical Production Approach for ISVs
+
+**ISVs** usually follow a multi-step approach to ingest data into Sentinel:
+
+1. **Develop a Data Connector** 
+    -  Create a Sentinel data connector using the modern [Sentinel Connector Builder Agent](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector-builder-agent) in VS Code with GitHub Copilot. This AI-assisted approach uses the Codeless Connector Framework (CCF) to reduce development time from weeks to hours and use natural language prompts to build polling configurations, data collection rules, connector definitions, and schemas. 
+    - For pull-based data sources, use [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector); for push-based data sources, use [CCF Push](https://learn.microsoft.com/en-us/azure/sentinel/create-push-codeless-connector).
+2. **Ingest Data to Data Lake** — Stream telemetry through the connector into Sentinel's data lake
+3. **Leverage Sentinel Platform** — Use [Sentinel platform capabilities](https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel#Capabilities) for Data exploration, Graph, MCP server and build Security Copilot Agents.
+
+**Alternative:** If a connector already exists for your data source, refer to the [Sentinel Data Connectors Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference) to enable it and start ingesting the data.
+
+### Lab Approach: KQL Jobs for Sample Data Ingestion
+
+For **this lab**, we take a pragmatic shortcut using **KQL Jobs** to populate data lake with sample records. This approach:
+
+- ✅ **Mirrors the actual data schema** — Sample data adheres to the same schema as connector‑ingested data, letting you populate the data lake and test agent logic immediately
+- ✅ **Represents realistic attack scenarios** — Mock data reproduces the attack patterns and correlations you'd investigate in production
+02-Create-KQL-Jobs.md
+
 ## Prerequisites
 
 ### Onboarding
