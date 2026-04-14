@@ -2,22 +2,16 @@
 
 ## Prerequisites
 
-### Onboarding
-You must first onboard to the data lake. See the [Sentinel Data Lake Onboarding guide](./01-Sentinel-DataLake-Onboarding.md) for instructions.
+You must first complete the previous labs:
+- [Lab 1: Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
+- [Lab 2: Creating KQL Jobs](./02-Create-KQL-Jobs.md)
 
-### System Requirements
+## System Requirements
 - Visual Studio Code installed
-- AI Toolkit or similar MCP-enabled extension
 
-### Required Permissions
+## Required Permissions
 - Account with at least **Security Reader** role
 - Access to Microsoft Sentinel workspace
-- Azure account with appropriate permissions
-
-### References
-For more detailed information, see:
-- [Get started with Microsoft Sentinel MCP server](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started)
-- [Create and use custom Microsoft Sentinel MCP tools](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-create-custom-tool)
 
 ## Step-by-Step Setup Instructions
 
@@ -39,6 +33,7 @@ For more detailed information, see:
 1. Assign a friendly **Server ID** for easy identification
    - **Recommended:** `Microsoft Sentinel MCP server` or similar descriptive name
    - This ID helps you identify which server is which if you add multiple MCP servers
+2. Select MCP server to be available in all VS code workspaces or only in the current workspace
 
 ### Step 2: Allow Authentication
 
@@ -51,21 +46,18 @@ For more detailed information, see:
 
 **Authentication Status:**
 - Once authenticated, the MCP server connection is established
-- The server status should show as connected in the VS Code MCP interface
 
 ### Step 3: Open VS Code Chat
 
 1. Select **View > Chat** from the menu bar
    - **OR** Select the Toggle Chat icon beside the search bar
-   - **OR** Press **Ctrl + Alt + I** (Windows/Linux) or **Cmd + Alt + I** (macOS)
 
 2. The Chat panel opens at the right side of your editor
 
 ### Step 4: Verify Connection and Configure Tools
 
 #### Set Chat to Agent Mode
-1. In the VS Code Chat panel, look for mode selection (typically at the top)
-2. Set the chat mode to **"Agent"** mode
+1. In the VS Code Chat panel, Set the chat mode to **"Agent"** mode
    - This enables the use of external tools and MCP servers
 
 #### Confirm MCP Server Connection
@@ -74,20 +66,26 @@ For more detailed information, see:
 3. You should see the server name you assigned (e.g., "Microsoft Sentinel MCP server")
 4. A list of available tools from the MCP server should appear
 
-#### Verify Available Tools
-- The Chat interface should display available tools from your connected MCP server
-- You can now use these tools in your AI agent queries
-
 ## Using Sentinel MCP Tools in Chat
 
 Once your MCP server is configured, you can:
 
 1. **Ask the AI agent questions** that require Sentinel tool usage
-2. **Reference Sentinel data** directly in your queries
-3. **Request security investigations** that leverage pre-built tools
-4. **Query data lake** using integrated KQL capabilities
+2. **Request security investigations** that leverage pre-built tools
+3. **Query Sentinel data lake** using integrated KQL capabilities
 
 ### Example Interactions
 - "Analyze recent sign-in activity and surface anomalies"
 - "Query the data lake for suspicious activity on endpoints"
 
+## 🔄 Next Steps
+
+Now that you’re familiar with the Sentinel MCP Server tool collections and their capabilities, the next step is to use these MCP tools and build an agent.
+
+**Next:** Proceed to [Lab 4: Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md) to build, test, and refine your agent using Azure AI Foundry.
+
+## References
+For more detailed information, see:
+- [Get started with Microsoft Sentinel MCP server](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started)
+- [Explore Microsoft Sentinel data lake with data exploration collection](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool)
+- [Create and use custom Microsoft Sentinel MCP tools](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-create-custom-tool)

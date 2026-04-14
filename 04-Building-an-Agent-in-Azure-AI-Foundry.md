@@ -10,8 +10,6 @@ In this lab, you will build an Agent that reasons across identity risk, authenti
 
 By the end of this lab, you will understand:
 
-- How fictional ISV telemetry can be modeled realistically in Sentinel
-- How to create KQL jobs using datatable for lab scenarios
 - How to author Agent instructions that follow grounding rules
 - How to create and test an agent using AI Foundry
 
@@ -31,29 +29,31 @@ A user signs in from a previously unseen geography, triggering a medium-risk ide
 
 The sign-in is treated as an initial access event rather than a benign anomaly, prompting immediate containment of the identity and isolation of the affected workload.
 
-## Step 1️⃣ – Ingest Fictional IdentityDrift Data into Sentinel Data Lake
+## Step 1️⃣ – Verify Sample Data Is Ingested into Sentinel Data Lake
 
-**CommonSecurity_ID_KQL_CL** represents IdentityDrift identity-aware access telemetry, modeled after how real identity vendors stream post-authentication access context into Sentinel.
+### Prerequisites
+Before proceeding, ensure you have completed:
+- **[Lab 1: Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)** —  Sentinel Data Lake is successfully onboarded
+- **[Lab 2: Creating KQL Jobs](./02-Create-KQL-Jobs.md)** — All sample data has been ingested into the data lake
 
-### KQL Job – Ingest IdentityDrift Sample Data
+### Verify Data
 
-Create KQL Job by following the steps in [Create-KQL-Jobs](./02-Create-KQL-Jobs.md)
+All KQL jobs should be running and populating the following tables:
 
-### KQL Job - Ingest Sample Data for SigninLogs, AADRiskyUsers, DeviceProcessEvents and SecurityAlerts
-
-At this stage, the same user identity should appear across:
-
+- [CommonSecurity_ID_KQL_CL](KQL-Jobs/CommonSecurity_ID_Logs) 
 - [SigninLogs_KQL_CL](KQL-Jobs/SigninLogs) 
 - [AADRiskyUsers_KQL_CL](KQL-Jobs/AADRiskyUsers)
 - [DeviceProcessEvents_KQL_CL](KQL-Jobs/DeviceProcessEvents)
-- [SecurityAlerts](KQL-Jobs/SecurityAlerts)
+- [SecurityAlerts_KQL_CL](KQL-Jobs/SecurityAlerts)
+
+At this stage, the same user identity should appear across all these tables, allowing your agent to correlate signals across identity, access, and endpoint data.
 
 ## Step 2️⃣ – Create the Agent in AI Foundry
 
 #### Navigate to Azure AI Foundry
-1. Open your web browser and navigate to **https://ai.azure.com/**
+1. Navigate to **https://ai.azure.com/**
 2. Sign in with your organizational credentials that have access to Azure AI Foundry
-3. Select your **AI Foundry project** from the available options
+3. Select your existing Microsoft Foundry project or Create a project
 
 ### Step 2: Create AI Agent
 
@@ -72,10 +72,10 @@ At this stage, the same user identity should appear across:
 ### IdentityDrift Agent Instructions
 
 ```
-1. Accept User Principal Name (UPN) Input
-
-Accept a User Principal Name (UPN) or identifying string as input from the prompt. Ensure to use that UPN throughout the analysis.
-
+1. UserPrincipalName Input
+ 
+Ensure to use the UserPrincipalName input throughout the analysis.
+ 
 2. Global Query Rule (MANDATORY)
 
 Every query MUST filter to the last 24 hours:
@@ -235,3 +235,9 @@ Highlight discrepancies or noteworthy observations across identity, access, and 
 ![](Images/Test-Agent-AI-Foundry-1.png)
 ![](Images/Test-Agent-AI-Foundry-2.png)
 ![](Images/Test-Agent-AI-Foundry-3.png)
+
+## 🔄 Next Steps
+
+Excellent! Your agent instructions has now been tested in Azure AI Foundry. The validated agent instructions are ready to be used to build a Security Copilot agent.
+
+**Next:** Proceed to [Lab 5: Building an Agent in Security Copilot](./05-Building-an-Agent-in-Security-Copilot.md) to build your agent in the Security Copilot.

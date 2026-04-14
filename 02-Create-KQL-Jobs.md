@@ -4,11 +4,12 @@
 
 ### Typical Production Approach for ISVs
 
-**ISVs** usually follow a multi-step approach to ingest data into Sentinel:
+**ISVs** usually follow below approach to ingest data into Sentinel:
 
 1. **Develop a Data Connector** 
-    -  Create a Sentinel data connector using the modern [Sentinel Connector Builder Agent](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector-builder-agent) in VS Code with GitHub Copilot. This AI-assisted approach uses the Codeless Connector Framework (CCF) to reduce development time from weeks to hours and use natural language prompts to build polling configurations, data collection rules, connector definitions, and schemas. 
-    - For pull-based data sources, use [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector); for push-based data sources, use [CCF Push](https://learn.microsoft.com/en-us/azure/sentinel/create-push-codeless-connector).
+    -  Create a Sentinel data connector using the [Sentinel Connector Builder Agent](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector-builder-agent) in VS Code with GitHub Copilot. This AI-assisted approach reduces development time from weeks to hours and use natural language prompts to build polling configurations, data collection rules, connector definitions, and schemas. 
+    - For pull-based data sources, use [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector) 
+    - For push-based data sources, use [CCF Push](https://learn.microsoft.com/en-us/azure/sentinel/create-push-codeless-connector).
 2. **Ingest Data to Data Lake** — Stream telemetry through the connector into Sentinel's data lake
 3. **Leverage Sentinel Platform** — Use [Sentinel platform capabilities](https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel#Capabilities) for Data exploration, Graph, MCP server and build Security Copilot Agents.
 
@@ -20,7 +21,6 @@ For **this lab**, we take a pragmatic shortcut using **KQL Jobs** to populate da
 
 - ✅ **Mirrors the actual data schema** — Sample data adheres to the same schema as connector‑ingested data, letting you populate the data lake and test agent logic immediately
 - ✅ **Represents realistic attack scenarios** — Mock data reproduces the attack patterns and correlations you'd investigate in production
-02-Create-KQL-Jobs.md
 
 ## Prerequisites
 
@@ -76,3 +76,9 @@ You must first onboard to the data lake. See the [Sentinel Data Lake Onboarding 
 | AADRiskyUsers | AADRiskyUsers |
 | DeviceProcessEvent | DeviceProcessEvents | 
 | SecurityAlerts | SecurityAlerts |
+
+## 🔄 Next Steps
+
+Great! Your data lake is now populated with sample telemetry from IdentityDrift, Microsoft Entra ID and Microsoft Defender.
+
+**Next:** Proceed to [Lab 3: Setting Up Sentinel MCP Server in VS Code](./03-Sentinel-MCP-VSCode-Setup.md) to explore Sentinel MCP Server tools and query the data using prompts.

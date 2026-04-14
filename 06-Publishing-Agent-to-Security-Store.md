@@ -6,8 +6,7 @@ This module guides you through the process of publishing a Microsoft Security Co
 
 ## Prerequisites
 
-- Completed Lab 05: Building an Agent in Security Copilot
-- A working Security Copilot agent with agent manifest
+- A working Security Copilot agent
 - Microsoft Partner Center account
 
 ## Architecture Overview
@@ -762,8 +761,17 @@ Check:
 - At minimum one screenshot must show: (1) agent actively running/returning results, (2) integrated Microsoft product (e.g., Microsoft Sentinel) visible under Plugins
 - Add `MCP.Sentinel` to `RequiredSkillsets` in `AgentManifest.YAML` if Sentinel is not appearing in agent view
 
-## Additional Resources
+## 🔄 Next Steps
 
+Congratulations! Your agent is now published to the Microsoft Security Store and available for customers.
+
+**Next Steps:**
+- **Monitor Usage:** Track agent adoption and usage metrics.
+- **Iterate & Improve:** Use customer feedback and telemetry to refine agent instructions and expand capabilities
+- **Additional Reading:** Return to the [README](./README.md) to explore additional learning resources
+
+## References
+For more detailed information, see:
 - [Publish a Security Copilot Agent in Security Store - Microsoft Learn](https://learn.microsoft.com/en-us/security/store/publish-a-security-copilot-agent-or-analytics-solution-in-security-store)
 - [Microsoft Security Store](https://securitystore.microsoft.com/)
 - [Microsoft Partner Center](https://partner.microsoft.com/)

@@ -73,4 +73,13 @@ Before onboarding to the data lake, you need to create or have access to a Log A
 
 ![Microsoft Sentinel Data lake exploration](Images/Data%20Lake%20Onboarding-5.png)
 
-**Reference:** [Microsoft Docs - Onboard to Microsoft Sentinel data lake from the Defender portal](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboard-defender)
+## 🔄 Next Steps
+
+Congratulations! Your Sentinel data lake is now onboarded and ready for data ingestion.
+
+**Next:** Proceed to [Lab 2: Creating KQL Jobs in Sentinel Data Lake Exploration](./02-Create-KQL-Jobs.md) to ingest sample telemetry into data lake.
+
+## References
+For more detailed information, see:
+
+- [Microsoft Docs - Onboard to Microsoft Sentinel data lake from the Defender portal](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboard-defender)

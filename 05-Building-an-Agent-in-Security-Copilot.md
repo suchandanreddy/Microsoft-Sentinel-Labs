@@ -23,14 +23,11 @@ You must first complete the previous labs:
 - User needs **Security Administrator** role to create Secure Compute Units (SCUs) which is prerequisite to run agents in Security Copilot.
 - **Security Operator** role is sufficient to create and test Agents
 
-### Required Access
-- Access to Security Copilot at https://securitycopilot.microsoft.com/
-- Access to Microsoft Sentinel workspace
 
 ## Step 1️⃣ – Create a Security Copilot Workspace
 
 ### Navigate to Security Copilot
-1. Open your web browser and navigate to **https://securitycopilot.microsoft.com/**
+1. Navigate to **https://securitycopilot.microsoft.com/**
 2. Sign in with your organizational credentials that have the required permissions
 
 ### Create a SCU Capacity and New Workspace
@@ -265,12 +262,13 @@ Define `UserPrincipalName` as the input to get user identity to perform investig
 ![Agent Run](Images/Security-Copilot-Agent-Run-3.png)
 
 
-### Related Labs
-- [Lab 1: Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
-- [Lab 2: Creating KQL Jobs](./02-Create-KQL-Jobs.md)
-- [Lab 4: Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
+## 🔄 Next Steps
 
-### References
+Excellent! Your Security Copilot agent is now built, tested, and ready for customer use.
+
+**Next:** Proceed to [Lab 6: Publishing Agent to Security Store](./06-Publishing-Agent-to-Security-Store.md) to package and publish your agent to the Microsoft Security Store.
+
+## References
 For more detailed information, see:
 - [Create and manage Security Copilot workspaces](https://learn.microsoft.com/en-us/copilot/security/manage-workspaces)
 - [Build and configure custom agents in Security Copilot](https://learn.microsoft.com/id-id/copilot/security/developer/create-agent-dev)
