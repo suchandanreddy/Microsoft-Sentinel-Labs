@@ -271,5 +271,4 @@ Excellent! Your Security Copilot agent is now built, tested, and ready for custo
 ## References
 For more detailed information, see:
 - [Create and manage Security Copilot workspaces](https://learn.microsoft.com/en-us/copilot/security/manage-workspaces)
-- [Build and configure custom agents in Security Copilot](https://learn.microsoft.com/id-id/copilot/security/developer/create-agent-dev)
-- [Security Copilot plugins and data source integration](https://learn.microsoft.com/en-us/copilot/security/overview)
+- [Build an agent in Security Copilot](https://learn.microsoft.com/id-id/copilot/security/developer/create-agent-dev)
