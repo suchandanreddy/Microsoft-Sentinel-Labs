@@ -53,10 +53,9 @@ Before starting these labs, ensure you have:
    - Allow 60-120 minutes for the onboarding process
                      
 2. **Lab 2:** [Creating KQL Jobs](./02-Create-KQL-Jobs.md)
-   - Learn to create sample data jobs
-   - Ingest IdentityDrift telemetry and other test data
+   - Learn to create KQL jobs to ingest sample IdentityDrift telemetry and other test data
 
-3. **Lab 3:** [MCP Server Setup](./03-Sentinel-MCP-VSCode-Setup.md)
+3. **Lab 3:** [Sentinel MCP Server Setup](./03-Sentinel-MCP-VSCode-Setup.md)
    - Use Sentinel MCP server in VS code
 
 4. **Lab 4:** [Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
