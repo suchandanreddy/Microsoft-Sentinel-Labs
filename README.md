@@ -71,6 +71,9 @@ Before starting these labs, ensure you have:
    - Create SaaS offer in Partner Center
    - Publish to Security Store 
 
+
+![](Images/Learning%20Path.png)
+
 ## 📖 Additional Resources
 
 Enhance your understanding of agent development with these complementary blogs:
