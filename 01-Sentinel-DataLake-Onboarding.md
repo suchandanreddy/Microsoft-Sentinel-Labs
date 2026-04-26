@@ -77,7 +77,7 @@ Before onboarding to the data lake, you need to create or have access to a Log A
 
 Congratulations! Your Sentinel data lake is now onboarded and ready for data ingestion.
 
-**Next:** Proceed to [Lab 2: Creating KQL Jobs in Sentinel Data Lake Exploration](./02-Create-KQL-Jobs.md) to ingest sample telemetry into data lake.
+**Next:** Proceed to [Lab 2: Ingest Data to Sentinel Data Lake](./02-Ingest-Data-to-Sentinel-Data-Lake.md) to ingest sample telemetry into data lake.
 
 ## References
 For more detailed information, see:

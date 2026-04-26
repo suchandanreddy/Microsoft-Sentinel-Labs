@@ -16,7 +16,7 @@ By the end of this lab, you will understand:
 ### Onboarding
 You must first complete the previous labs:
 - [Lab 1: Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
-- [Lab 2: Creating KQL Jobs](./02-Create-KQL-Jobs.md)
+- [Lab 2: Ingest Data to Sentinel Data Lake](./02-Ingest-Data-to-Sentinel-Data-Lake.md)
 - [Lab 4: Building an Agent in Azure AI Foundry](./04-Building-an-Agent-in-Azure-AI-Foundry.md)
 
 ### Required Permissions

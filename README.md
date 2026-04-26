@@ -52,8 +52,8 @@ Before starting these labs, ensure you have:
    - Establish the foundation by setting up your data lake
    - Allow 60-120 minutes for the onboarding process
                      
-2. **Lab 2:** [Creating KQL Jobs](./02-Create-KQL-Jobs.md)
-   - Learn to create KQL jobs to ingest sample IdentityDrift telemetry and other test data
+2. **Lab 2:** [Ingest Data to Sentinel Data Lake](./02-Ingest-Data-to-Sentinel-Data-Lake.md)
+   - Ingest sample IdentityDrift telemetry and other test data into the Sentinel data lake using KQL jobs
 
 3. **Lab 3:** [Sentinel MCP Server Setup](./03-Sentinel-MCP-VSCode-Setup.md)
    - Use Sentinel MCP server in VS code

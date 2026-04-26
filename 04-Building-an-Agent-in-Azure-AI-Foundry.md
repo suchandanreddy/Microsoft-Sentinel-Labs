@@ -34,7 +34,7 @@ The sign-in is treated as an initial access event rather than a benign anomaly, 
 ### Prerequisites
 Before proceeding, ensure you have completed:
 - **[Lab 1: Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)** —  Sentinel Data Lake is successfully onboarded
-- **[Lab 2: Creating KQL Jobs](./02-Create-KQL-Jobs.md)** — All sample data has been ingested into the data lake
+- **[Lab 2: Ingest Data to Sentinel Data Lake](./02-Ingest-Data-to-Sentinel-Data-Lake.md)** — All sample data has been ingested into the data lake
 
 ### Verify Data
 

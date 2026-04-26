@@ -1,4 +1,6 @@
-# Creating KQL Jobs in Sentinel Data Lake Exploration
+# Ingest Data to Sentinel Data Lake
+
+This lab walks you through ingesting sample IdentityDrift telemetry (and supporting tables) into your Sentinel data lake so subsequent labs have data to query.
 
 ## Overview
 
@@ -15,7 +17,7 @@
 
 **Alternative:** If a connector already exists for your data source, refer to the [Sentinel Data Connectors Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference) to enable it and start ingesting the data.
 
-### Lab Approach: KQL Jobs for Sample Data Ingestion
+### Lab Approach: Ingest Sample Data via KQL Jobs
 
 For **this lab**, we take a pragmatic shortcut using **KQL Jobs** to populate data lake with sample records. This approach:
 
@@ -30,7 +32,7 @@ You must first onboard to the data lake. See the [Sentinel Data Lake Onboarding 
 ### Required Permissions
 - User need to be **Security Administrator** or **Security Operator**
 
-## Step-by-Step: Creating a KQL Job to Ingest Sample Data
+## Step-by-Step: Ingest Sample Data Using a KQL Job
 
 ### Step 1: Data Lake Exploration - Jobs
 
