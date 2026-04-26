@@ -5,7 +5,6 @@
 You must first complete the previous labs:
 - [Lab 1: Sentinel Data Lake Onboarding](./01-Sentinel-DataLake-Onboarding.md)
 - [Lab 2: Ingest Data to Sentinel Data Lake](./02-Ingest-Data-to-Sentinel-Data-Lake.md)
-- [Lab 2: Ingest Data to Sentinel Data Lake](./02-Ingest-Data-to-Sentinel-Data-Lake.md)
 
 ## System Requirements
 - Visual Studio Code installed
